@@ -10,7 +10,7 @@ nombres = ['Alfil blanco', 'Alfil negro', 'Caballo blanco', 'Caballo negro', 'Da
 st.title("Clasificador de piezas de ajedrez")
 
 archivo = st.file_uploader("Sube una imagen")
-
+st.caption("El modelo fue entrenado con piezas específicas. Para mejores resultados, usá fotos con fondo claro y buena iluminación.")
 if archivo is not None: 
     img_original = Image.open(archivo)
     img = np.array(img_original)
