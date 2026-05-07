@@ -11,6 +11,9 @@ st.title("Clasificador de piezas de ajedrez")
 
 archivo = st.file_uploader("Sube una imagen")
 st.caption("Modelo entrenado con piezas de ajedrez específicas. Puede presentar domain shift con piezas de otro estilo visual.")
+
+st.markdown("[Ver demo en YouTube](https://www.youtube.com/watch?v=8Jen8Au5JRQ)")
+
 if archivo is not None: 
     img_original = Image.open(archivo)
     img = np.array(img_original)
