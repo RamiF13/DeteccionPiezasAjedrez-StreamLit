@@ -11,6 +11,8 @@ st.title("Clasificador de piezas de ajedrez")
 
 archivo = st.file_uploader("Sube una imagen")
 st.caption("El modelo fue entrenado con piezas específicas. Para mejores resultados, usá fotos con fondo claro y buena iluminación.")
+st.caption("Modelo entrenado con piezas de ajedrez específicas. Puede presentar domain shift con piezas de otro estilo visual.")
+
 if archivo is not None: 
     img_original = Image.open(archivo)
     img = np.array(img_original)
